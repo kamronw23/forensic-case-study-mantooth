@@ -6,13 +6,15 @@ A full Windows disk forensic examination of the **Mantooth.E01** practice eviden
 >
 > *This is a fictional subject in a widely used forensic training image. No real person is involved.*
 
+> 📄 **[Read the full forensic report (PDF)](report/Mantooth_Forensic_Report.pdf)**: complete findings, screenshots, and tool output.
+
 | | |
 |---|---|
 | **Evidence** | `Mantooth.E01` (EnCase E01, 250,879 sectors × 512 bytes = 122.5 MB) |
 | **System** | Windows, hostname `WESMANTOOTH-PC`, OS installed 2007-02-27 |
 | **Tools** | Magnet AXIOM 9.10 · Forensic Explorer 5.6.8 · AccessData FTK Imager (acquisition) |
 | **Time standard** | All timestamps UTC |
-| **Full report** | [`report/Mantooth_Forensic_Report.pdf`](report/) *(add your PDF here)* |
+| **Full report** | [📄 Mantooth_Forensic_Report.pdf](report/Mantooth_Forensic_Report.pdf) |
 
 ---
 
@@ -187,6 +189,8 @@ AXIOM recovered **999 web artifacts** (195 Google searches, 121 IE history recor
 - **Encrypted containers:** BestCrypt/TrueCrypt volumes couldn't be opened. Search for container files and recover the BitLocker key files.
 - **Email:** examine full message headers and recipients to identify who received the attachments.
 - **Single hash at acquisition:** only MD5 was recorded originally. SHA-256 should be captured at acquisition going forward.
+
+For screenshots and full tool output for every finding, see the **[full report](report/Mantooth_Forensic_Report.pdf)**.
 
 ---
 
